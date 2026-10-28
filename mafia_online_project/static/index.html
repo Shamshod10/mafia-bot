@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mafia Online</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="smoke"></div>
+<header><div class="brand"><span class="mark">M</span><div><b>MAFIA <em>ONLINE</em></b><small>TRUST NO ONE</small></div></div><span class="status"><i></i> ONLINE</span></header>
+<main>
+<section class="hero">
+<div class="eyebrow">♠ THE CITY NEVER SLEEPS ♠</div>
+<h1>Kimga <span>ishonasiz?</span></h1>
+<p>Do‘stlaringizni yig‘ing. Rolingizni yashiring. Mafiyani toping.</p>
+</section>
+<section class="panel" id="home">
+<div class="section-title"><span>01 / LOBBI</span><b>O‘yinni boshlash</b></div>
+<label for="username">O‘yinchi nomi</label><input id="username" maxlength="32" placeholder="Masalan, Ghost">
+<div class="actions"><button class="primary" id="create">＋ Xona yaratish</button><div class="join"><input id="roomcode" maxlength="6" placeholder="XONA KODI"><button id="join">Kirish</button></div></div>
+<p class="hint">Kamida 5, ko‘pi bilan 15 o‘yinchi. Xona kodini do‘stlaringizga yuboring.</p>
+</section>
+<section class="panel hidden" id="lobby">
+<div class="section-title"><span>02 / XONA</span><b>Yopiq yig‘ilish</b></div>
+<div class="roomline"><div><small>XONA KODI</small><strong id="code">------</strong></div><button class="secondary" id="copy">Nusxa olish</button></div>
+<div class="section-title players-title"><b>O‘yinchilar</b><span id="count">0/15</span></div>
+<div id="players" class="players"></div>
+<div class="actions"><button class="primary" id="start">O‘yinni boshlash</button><button class="secondary" id="refresh">Yangilash</button></div>
+</section>
+<section class="panel hidden" id="game">
+<div class="section-title"><span>03 / MAYDON</span><b id="phase">TUN</b></div>
+<div class="rolebox"><small>SIZNING ROLINGIZ</small><h2 id="role">—</h2><p id="rolehint">Rolingiz maxfiy saqlanadi.</p></div>
+<div class="section-title"><b>O‘yinchilar</b><span id="round">1-raund</span></div>
+<div id="targets" class="players"></div>
+<div class="actions"><button class="secondary" id="nextphase">Keyingi bosqich (xona egasi)</button><button class="secondary" id="refreshgame">Yangilash</button></div>
+<div class="section-title"><b>Shahar suhbati</b><span>CHAT</span></div>
+<div class="chat" id="chat"></div>
+<div class="join"><input id="message" maxlength="400" placeholder="Xabar yozing..."><button id="send">Yuborish</button></div>
+</section>
+<div id="notice" class="notice hidden"></div>
+</main>
+<footer>MAFIA ONLINE <span>◆</span> BUILT FOR THE NIGHT</footer>
+<script src="/static/app.js"></script>
+</body></html>
